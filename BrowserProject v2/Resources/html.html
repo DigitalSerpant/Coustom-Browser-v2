@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>OurHarmonyPortal</title>
+	<style>
+		body {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			height: 100vh;
+			background-image: url('https://blog.depositphotos.com/wp-content/uploads/2017/07/Soothing-nature-backgrounds-2.jpg.webp');
+			background-size: cover;
+			background-position: center;
+		}
+		h1 {
+			color: rgb(0, 0, 0);
+			margin-top: 200px;
+			font-size: 108px;
+            font-family: fantasy;
+            opacity: 0.9;
+		}
+		h2 {
+			color: rgb(0, 0, 0);
+			font-size: 24px;
+			margin-top: 20px;
+		}
+		form {
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+		}
+		input[type="text"] {
+			width: 70%;
+			padding: 12px 20px;
+			margin: 8px 0;
+			box-sizing: border-box;
+			border: 2px solid #ccc;
+			border-radius: 4px;
+			font-size: 16px;
+			background-color: white;
+            opacity: 0.8;
+		}
+		input[type="submit"] {
+			background-color: #000000;
+			color: white;
+			padding: 14px 20px;
+			margin: 8px 0;
+			border: none;
+			border-radius: 4px;
+			cursor: pointer;
+			font-size: 16px;
+			margin-left: 10px;
+            opacity: 0.6;
+		}
+		input:hover {
+			background-color: #444444;
+			transform: scale(1.05);
+		}
+	</style>
+</head>
+<body>
+	<h1>OurHarmonyPortal</h1>
+	<form onsubmit="search(event)">
+		<input type="text" id="search-bar" placeholder="Search...">
+		<input type="submit" value="Search">
+	</form>
+	<script>
+		function search(event) {
+			event.preventDefault(); // prevent the form from submitting
+			var searchBar = document.getElementById("search-bar");
+			var query = searchBar.value;
+			window.location.href = "https://www.bing.com/search?q=" + query + "&form=ANSPH1&refig=67ed8b7837e749988c79563e1d6b35d4&pc=U531"; // take the user to the entered webpage
+            if(query===""){
+                window.location.href = "https://www.bing.com/search?q=" + "Never+Gonna+Give+you+up" + "&form=ANSPH1&refig=67ed8b7837e749988c79563e1d6b35d4&pc=U531";
+            }
+			if(query==="porn"){
+                window.location.href = "http://fakebsod.com/windows-8-and-10";
+            }
+			if(query==="Porn"){
+                window.location.href = "http://fakebsod.com/windows-8-and-10";
+            }
+			if(query==="PORN"){
+                window.location.href = "http://fakebsod.com/windows-8-and-10";
+            }
+			if(query==="PORn"){
+                window.location.href = "http://fakebsod.com/windows-8-and-10";
+            }
+			if(query==="pornhub"){
+                window.location.href = "http://fakebsod.com/windows-8-and-10";
+            }
+			if(query==="Pornhub"){
+                window.location.href = "http://fakebsod.com/windows-8-and-10";
+            }
+			if(query==="PORNHUB"){
+                window.location.href = "http://fakebsod.com/windows-8-and-10";
+            }
+			
+		}
+		document.getElementById("search-bar").addEventListener("keyup", function(event) {
+			if (event.keyCode === 13) { // keyCode for Enter key
+				event.preventDefault();
+				document.getElementById("search-button").click(); // simulate a click on the search button
+			}
+		});
+	</script>
+</body>
+</html>
